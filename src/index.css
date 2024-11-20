@@ -1,0 +1,27 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ /* Scrollbar Styling */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #E3E4E6; /* Light background */
+    border-radius: 5px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #072635; /* Dark thumb */
+    border-radius: 5px;
+    min-height: 40px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #072635; /* Darker thumb on hover */
+  }
+  
