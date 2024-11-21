@@ -74,24 +74,26 @@ export default function App() {
 
   return (
     <div className="flex flex-col bg-lightGray h-full min-h-screen items-center">
+    <div className="sticky top-0 z-10 w-full">
       <Header />
- 
-      <div className="flex w-full flex-col lg:flex-row space-x-2 max-w-7xl">
-        {/* ProfileCard and LabReports on top for mobile screens */}
-        <div className="space-y-3 order-1 lg:order-3 px-3 items-center">
-          <ProfileCard patient={patient} />
-          <LabReports labResults={patient.lab_results} />
-        </div>
-        {/* PatientList visible only for large screens */}
-        <div className="hidden lg:block order-2">
-          <PatientList />
-        </div>
-        {/* DiagnosisHistory and DiagnosticList */}
-        <div className="space-y-3 flex-1 order-3 lg:order-2 px-3 mt-4 lg:mt-0">
-          <DiagnosisHistory diagnosisHistory={patient.diagnosis_history} />
-          <DiagnosticList diagnosticList={patient.diagnostic_list} />
-        </div>
+    </div>
+    <div className="flex w-full flex-col lg:flex-row space-x-0 lg:space-x-2 max-w-7xl">
+      {/* ProfileCard and LabReports on top for mobile screens */}
+      <div className="space-y-3 order-1 lg:order-3 px-3 items-center">
+        <ProfileCard patient={patient} />
+        <LabReports labResults={patient.lab_results} />
+      </div>
+      {/* PatientList visible only for large screens */}
+      <div className="hidden lg:block order-2">
+        <PatientList />
+      </div>
+      {/* DiagnosisHistory and DiagnosticList */}
+      <div className="space-y-3 flex-1 order-3 lg:order-2 px-3 mt-4 lg:mt-0">
+        <DiagnosisHistory diagnosisHistory={patient.diagnosis_history} />
+        <DiagnosticList diagnosticList={patient.diagnostic_list} />
       </div>
     </div>
+  </div>
+  
   );
 }

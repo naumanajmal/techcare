@@ -21,7 +21,7 @@ const Header = () => {
     ];
 
     return (
-        <div className='w-full p-5'>
+        <div className='w-full p-3 lg:p-5'>
             <header className="w-full px-4 lg:px-6 py-4 bg-white  relative rounded-full ">
                 <div className=" mx-auto flex items-center justify-between px-5">
                     {/* Logo */}
