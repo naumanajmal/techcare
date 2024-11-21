@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Settings, MessageSquare, Calendar, Users, Home, Menu, X } from 'lucide-react';
+import {  Menu, X } from 'lucide-react';
 import Woman from '../assets/healthcare/senior-women.png'
 import Logo from '../assets/healthcare/TestLogo.svg'
 import HomeFillow from '../assets/healthcare/home_FILL0.svg'
@@ -22,7 +22,7 @@ const Header = () => {
 
     return (
         <div className='w-full p-5'>
-            <header className="w-full px-4 md:px-6 py-4 bg-white  relative rounded-full ">
+            <header className="w-full px-4 lg:px-6 py-4 bg-white  relative rounded-full ">
                 <div className=" mx-auto flex items-center justify-between px-5">
                     {/* Logo */}
                     <div className="flex items-center space-x-2">
@@ -33,7 +33,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden p-2 hover:bg-gray-100 rounded-full"
+                        className="lg:hidden p-2 hover:bg-gray-100 rounded-full"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         {isMobileMenuOpen ? (
@@ -44,7 +44,7 @@ const Header = () => {
                     </button>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex flex-1 px-16  justify-center">
+                    <nav className="hidden lg:flex flex-1 px-16  justify-center">
                         <ul className="flex items-center justify-center space-x-8">
                             {navItems.map((item, index) => (
                                 <li key={index}>
@@ -62,7 +62,7 @@ const Header = () => {
                     </nav>
 
                     {/* Desktop User Profile */}
-                    <div className="hidden md:flex items-center space-x-3 ">
+                    <div className="hidden lg:flex items-center space-x-3 ">
                         <div className="flex items-center space-x-2">
                             <div className="h-10 w-10 rounded-full overflow-hidden">
                                 <img
@@ -84,7 +84,7 @@ const Header = () => {
 
                     {/* Mobile Menu */}
                     {isMobileMenuOpen && (
-                        <div className="absolute top-full rounded-lg left-0 right-0 bg-white border-b shadow-lg md:hidden">
+                        <div className="absolute top-full rounded-lg left-0 right-0 bg-white border-b shadow-lg lg:hidden">
                             <nav className="px-4 py-2">
                                 <ul className="space-y-2">
                                     {navItems.map((item, index) => (

@@ -30,7 +30,7 @@ const PatientList = () => {
   ];
 
   return (
-    <div className=" h-svh flex flex-col    mx-2 bg-white rounded-xl  ">
+    <div className=" h-dvh flex flex-col    mx-2 bg-white rounded-xl  ">
       {/* Fixed Header Section */}
       <div className="flex justify-between items-center p-4    flex-row  ">
         <h1 className="text-xl font-extrabold  ">Patients</h1>
