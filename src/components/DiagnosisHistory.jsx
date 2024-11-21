@@ -56,12 +56,12 @@ const DiagnosisHistory = ({ diagnosisHistory }) => {
   }));
 
   return (
-    <div className="p-6 bg-white rounded-lg">
+    <div className="p-6 bg-white rounded-lg   ">
       <div className="mb-6 space-y-5">
-        <h2 className="text-xl font-semibold mb-4">Diagnosis History</h2>
+        <h2 className="text-xl font-extrabold mb-4">Diagnosis History</h2>
 
         <div className='flex flex-col lg:flex-row items-center rounded-xl space-x-4 ' style={{backgroundColor:'#F4F0FE'}}>
-          <div className="p-4 rounded-lg w-full lg:w-3/4">
+          <div className="p-4 rounded-lg w-full  ">
             <div className="flex justify-between items-center mb-4">
               <span className="font-medium">Blood Pressure</span>
               <select

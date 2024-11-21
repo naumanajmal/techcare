@@ -23,8 +23,8 @@ const ProfileCard = ({patient}) => {
   
 
   return (
-    <div className=" p-4 bg-white rounded-xl">
-      <div className="flex flex-col items-center ">
+   
+      <div className="flex flex-col items-center  p-4 bg-white rounded-xl">
         <img 
           src='/healthcare/Layer_22.png'
           alt={patientInfo.name}
@@ -75,11 +75,11 @@ const ProfileCard = ({patient}) => {
           </div>
         </div>
 
-        <button className="w-3/4 mt-10 bg-lightGreen text-darkGray py-2 rounded-full  font-bold">
+        <button className=" mt-10 bg-lightGreen text-darkGray py-2 rounded-full  font-bold px-5">
           Show All Information
         </button>
       </div>
-    </div>
+ 
   );
 };
 
